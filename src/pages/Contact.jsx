@@ -10,7 +10,12 @@ function Contact() {
             <p className="lead">212 Bridgeview Way, Longview, WA</p>
             <p>Steps from the Nutty Narrows Bridge—look for the cedar green awning.</p>
             <div className="contact-actions">
-              <a className="button" href="https://maps.google.com?q=Nutty+Narrows+Bridge" target="_blank" rel="noreferrer">
+              <a
+                className="button"
+                href="https://maps.google.com/?q=Nutty+Narrows+Thrift+Shop+Longview+WA"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Open in Maps
               </a>
             </div>
@@ -28,7 +33,13 @@ function Contact() {
               </li>
               <li>
                 <span className="label">Instagram</span>
-                <a href="https://instagram.com" target="_blank" rel="noreferrer">@NuttyNarrows</a>
+                <a
+                  href="https://www.instagram.com/nuttynarrowsthriftshop/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  @nuttynarrowsthriftshop
+                </a>
               </li>
             </ul>
             <p className="note">For donations or large-item pick-ups, call ahead so we can make space.</p>

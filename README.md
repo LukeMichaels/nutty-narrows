@@ -12,6 +12,12 @@ Vite + React site with an Instagram proxy that pulls live posts from the Nutty N
    - Copy `.env.example` to `.env` and set `INSTAGRAM_ACCESS_TOKEN` to a long-lived Basic Display token for the Nutty Narrows account.
    - Optional: adjust `INSTAGRAM_CACHE_MS` (milliseconds) and `INSTAGRAM_MEDIA_LIMIT` (number of posts to return).
 
+   Quick Basic Display token checklist:
+   - Create a Meta app and add the **Instagram Basic Display** product.
+   - Add `https://localhost` to the Valid OAuth Redirect URIs (development) and complete the OAuth flow for the Nutty Narrows account.
+   - Exchange the returned short-lived token for a long-lived one via `https://graph.instagram.com/access_token?grant_type=ig_exchange_token&client_secret=APP_SECRET&access_token=SHORT_LIVED_TOKEN`.
+   - Paste the long-lived token into `INSTAGRAM_ACCESS_TOKEN` and refresh it every ~60 days with `https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=LONG_LIVED_TOKEN`.
+
 3. Run the Instagram proxy (listens on port 5174 by default)
    ```bash
    npm run server

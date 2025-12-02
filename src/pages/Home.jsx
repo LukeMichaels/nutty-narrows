@@ -49,7 +49,20 @@ function Home() {
         </div>
       </SectionCard>
 
-      <SectionCard heading="Snapshots from the floor" eyebrow="Instagram feed" actions={<a className="button" href="https://instagram.com" target="_blank" rel="noreferrer">Open Instagram</a>}>
+      <SectionCard
+        heading="Snapshots from the floor"
+        eyebrow="Instagram feed"
+        actions={(
+          <a
+            className="button"
+            href="https://www.instagram.com/nuttynarrowsthriftshop/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open Instagram
+          </a>
+        )}
+      >
         <InstagramFeed />
       </SectionCard>
     </div>
