@@ -1,0 +1,36 @@
+// src/styles/utils/_variables.scss
+@use "sass:map";
+@use "sass:meta";
+
+$black: #121212;
+$kumera: #916828;
+$piper: #D06729;
+$putty: #E5D890;
+$raw-sienna: #D2863A;
+$stiletto: #D06729;
+$white: #FFFFFF;
+
+$font-regular: "yrsa", serif;
+$font-heading: "pinecone-mvb-rough2", sans-serif;
+
+$weight-regular: 400;
+$weight-bold: 700;
+$weight-heading: 400;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+/// @see {mixin} respond-to
+$breakpoints: (
+  'b-900': (max-width: 900px),
+  'b-890': (max-width: 890px),
+  'b-850': (max-width: 850px),
+  'b-780': (max-width: 780px),
+  'b-700': (max-width: 700px),
+  'b-670': (max-width: 670px),
+  'b-430': (max-width: 430px),
+  'b-400': (max-width: 400px),
+  'b-375': (max-width: 375px),
+  'b-325': (max-width: 325px),
+  'b-305': (max-width: 305px),
+);

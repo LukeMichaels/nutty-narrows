@@ -1,0 +1,84 @@
+@use "./variables" as *;
+@use "../utils/mixins" as *;
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-regular;
+  font-size: 16px;
+  font-weight: $weight-regular;
+  line-height: 1.55;
+}
+
+a {
+  text-decoration: none;
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+    outline: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $stiletto;
+  font-family: $font-heading;
+  font-weight: $weight-heading;
+  line-height: 1;
+}
+
+strong {
+  font-weight: $weight-bold;
+}
+
+input,
+textarea,
+select {
+  padding: 0.6rem 0.75rem 0.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+
+  &:focus-visible {
+    outline: 2px solid $piper;
+    outline-offset: 2px;
+  }
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:focus {
+    outline: 2px solid $piper;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    outline: 2px solid $piper;
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    background: $black;
+    cursor: not-allowed;
+  }
+}
+
+.site-main {
+  width: 100%;
+  max-width: 1080px;
+  position: relative;
+  margin: 0 auto;
+  background-color: $putty;
+}

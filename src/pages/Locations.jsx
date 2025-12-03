@@ -1,9 +1,9 @@
-function Contact() {
+function Locations() {
   return (
     <div className="page">
       <section>
         <p>
-          Nutty Narrows Contact
+          Nutty Narrows Locations
         </p>
       </section>
     </div>
