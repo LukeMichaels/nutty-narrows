@@ -9,4 +9,4 @@ function Contact() {
     </div>
   );
 }
-export default Home;
+export default Contact;

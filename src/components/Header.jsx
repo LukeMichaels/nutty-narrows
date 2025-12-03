@@ -5,7 +5,6 @@ function Header() {
     <header className="site-header">
       <div className="header-inner">
         <NavLink to="/" className="brand" aria-label="Nutty Narrows Thrift Shop home">
-          <LogoMark />
           <div className="brand-text">
             <span className="brand-name">Nutty Narrows</span>
             <span className="brand-tagline">Thrift Shop</span>
@@ -19,8 +18,13 @@ function Header() {
               </NavLink>
             </li>
             <li>
+              <NavLink to="/locations" className={({ isActive }) => (isActive ? 'active' : '')}>
+                Locations
+              </NavLink>
+            </li>
+            <li>
               <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>
-                Contact & Location
+                Contact
               </NavLink>
             </li>
           </ul>

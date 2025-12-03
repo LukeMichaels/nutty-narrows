@@ -9,4 +9,4 @@ function Locations() {
     </div>
   );
 }
-export default Home;
+export default Locations;
