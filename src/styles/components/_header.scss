@@ -1,18 +1,26 @@
+// src/styles/components/_header.scss
 @use "../utils/variables" as *;
 @use "../utils/mixins" as *;
 
 header {
+  width: 100%;
   max-width: 1040px;
-  height: 128px;
-  margin: 0 auto;
+  height: 123px;
   position: relative;
+  margin: 0 auto;
+  background-image: url("../assets/nutty_narrows_top_no_text.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+  @include respond-to('b-1040') {
+    height: auto;
+    background: none;
+  }
 
   svg {
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: auto;
+    display: block;
     fill: $dark-brown;
   }
 

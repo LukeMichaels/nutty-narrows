@@ -29,15 +29,5 @@ $weight-heading: 400;
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 /// @see {mixin} respond-to
 $breakpoints: (
-  'b-900': (max-width: 900px),
-  'b-890': (max-width: 890px),
-  'b-850': (max-width: 850px),
-  'b-780': (max-width: 780px),
-  'b-700': (max-width: 700px),
-  'b-670': (max-width: 670px),
-  'b-430': (max-width: 430px),
-  'b-400': (max-width: 400px),
-  'b-375': (max-width: 375px),
-  'b-325': (max-width: 325px),
-  'b-305': (max-width: 305px),
+  'b-1040': (max-width: 1040px),
 );

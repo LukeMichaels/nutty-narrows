@@ -1,0 +1,103 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+body.is-landing-only .vending-controls {
+  display: none !important;
+}
+
+.placeholder {
+  min-height: 100%;
+
+.placeholder-card {
+    width: 100%;
+    max-width: 560px;
+    padding: 2.5rem 0;
+  }
+
+  .placeholder-title {
+    margin: 0 0 0.5rem;
+    font-size: 2rem;
+  }
+
+  .placeholder-tagline {
+    margin: 0 0 1.5rem;
+    font-weight: $weight-bold;
+    color: $piper;
+  }
+
+  .placeholder-body {
+    margin: 0 0 2rem;
+  }
+
+  .placeholder-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.3rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: $weight-bold;
+    text-decoration: none;
+    border: 2px solid transparent;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+      text-decoration: none;
+    }
+  }
+
+  .btn-icon {
+    font-size: 1.1rem;
+  }
+
+  .btn-primary {
+    background-color: $piper;
+    color: $tan;
+    border-color: $piper;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $kumera;
+      border-color: $kumera;
+    }
+  }
+
+  .btn-outline {
+    background-color: transparent;
+    color: $piper;
+    border-color: $piper;
+
+    &:hover,
+    &:focus-visible {
+      background-color: rgba($piper, 0.08);
+    }
+  }
+
+  .placeholder-footnote {
+    margin: 0;
+    font-size: 0.9rem;
+    color: $stiletto;
+    opacity: 0.9;
+
+    a {
+      color: $piper;
+      text-decoration: underline;
+
+      &:hover {
+        color: $kumera;
+      }
+
+    }
+
+  } // .placeholder-footnote
+
+} // .placeholder

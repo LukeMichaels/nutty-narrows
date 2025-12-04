@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1040 123.9">
+  <!-- Generator: Adobe Illustrator 30.0.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 123)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #916828;
+      }
+    </style>
+  </defs>
+  <g id="Machine_Top">
+    <path id="outer_border" class="st0" d="M979.5,0H60.5C27.1,0,0,27.1,0,60.5v63.4h20.9v-63.4c0-21.9,17.8-39.6,39.6-39.6h684.8v103.1h20.8V20.9h14.2v103.1h20.8V20.9h178.3c21.8,0,39.6,17.8,39.6,39.6v63.4h20.9v-63.4C1040,27.1,1012.9,0,979.5,0h0Z"/>
+    <path id="inner_border" class="st0" d="M672.6,68H117.3c-30.8,0-56,25.1-56,55.9h20.9c0-19.3,15.8-35.1,35.1-35.1h555.3c19.3,0,35.1,15.8,35.1,35.1h20.8c0-30.8-25.1-55.9-56-55.9h0Z"/>
+  </g>
+</svg>

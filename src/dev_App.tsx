@@ -1,3 +1,4 @@
+// src/App.tsx
 import type { FC } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import {
@@ -10,7 +11,10 @@ import {
 import VendingLayout from "./components/VendingLayout";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Landing from "./pages/Landing";
+import About from "./pages/About";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import Locations from "./pages/Locations";
 
 const App: FC = () => {
   return (
@@ -63,10 +67,12 @@ const AnimatedRoutes: FC = () => {
             exit="exit"
             className="vm-content-window"
             aria-live="polite"
-            tabIndex={-1}
-          >
+            tabIndex={-1} >
             <Routes location={location}>
-              <Route path="/" element={<Landing />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/locations" element={<Locations />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </motion.section>
         </AnimatePresence>

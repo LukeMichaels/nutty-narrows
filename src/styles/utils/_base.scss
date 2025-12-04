@@ -76,28 +76,34 @@ button {
   }
 }
 
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .site-main {
   width: 100%;
   max-width: 1040px;
   position: relative;
-  margin: 0 auto;
-  overflow: hidden;
   padding-left: 116px;
+  margin: 0 auto;
+  background-image: url("../assets/nutty_narrows_middle.svg");
+  background-repeat: repeat-y;
+  background-position: top center;
+  background-size: 100% auto;
 
-  svg {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    fill: $dark-brown;
+  @include respond-to('b-1040') {
+    padding: 0 20px 0 20px;
+    background: none;
   }
+}
 
-  .cls-1 {
-    fill: $dark-brown;
-  }
-
-} // .site-main
+.vm-content-window {
+  position: relative;
+  z-index: 1;
+  //padding: 3rem 3rem 2rem;
+}
 
 #Machine_Top, #Machine_Middle, #Machine_Bottom {
   fill: $dark-brown;
