@@ -15,6 +15,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: $tan;
   font-family: $font-regular;
   font-size: 16px;
   font-weight: $weight-regular;
@@ -77,8 +78,27 @@ button {
 
 .site-main {
   width: 100%;
-  max-width: 1080px;
+  max-width: 1040px;
   position: relative;
   margin: 0 auto;
-  background-color: $putty;
+  overflow: hidden;
+  padding-left: 116px;
+
+  svg {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: $dark-brown;
+  }
+
+  .cls-1 {
+    fill: $dark-brown;
+  }
+
+} // .site-main
+
+#Machine_Top, #Machine_Middle, #Machine_Bottom {
+  fill: $dark-brown;
 }

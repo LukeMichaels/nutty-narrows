@@ -1,2 +1,23 @@
 @use "../utils/variables" as *;
 @use "../utils/mixins" as *;
+
+footer {
+  max-width: 1040px;
+  height: 447px;
+  margin: 0 auto;
+  position: relative;
+
+  svg {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: $dark-brown;
+  }
+
+  .cls-1 {
+    fill: $dark-brown;
+  }
+
+} // header
