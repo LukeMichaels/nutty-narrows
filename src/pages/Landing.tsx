@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import Logo from "../assets/nutty_narrows_thrift_shop_logo_badge.svg?react";
 
 const Landing: FC = () => {
   useEffect(() => {
@@ -17,11 +18,18 @@ const Landing: FC = () => {
   return (
     <main className="placeholder" aria-labelledby="nn-title">
       <section className="placeholder-card">
-        <h1 id="nn-title" className="placeholder-title">
-          Nutty Narrows Thrift Shop
-        </h1>
-
-        <p className="placeholder-tagline">Local makers. Little treasures.</p>
+        
+        <div className="placeholder-header">
+          <div className="placeholder-header-left">
+            <Logo className="placeholder-logo" />
+          </div>
+          <div className="placeholder-header-right">
+            <h1 id="nn-title" className="placeholder-title">
+              Nutty Narrows Thrift Shop
+            </h1>
+            <p className="placeholder-tagline">Local makers. Little treasures.</p>
+          </div>
+        </div>
 
         <p className="placeholder-body">
           Our squirrel-stocked vending machine is getting ready for its big debut online. In the meantime, you can visit us in person inside{" "} <strong>Café Guse</strong> in Longview, Washington.

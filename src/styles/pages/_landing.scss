@@ -8,22 +8,43 @@ body.is-landing-only .vending-controls {
 .placeholder {
   min-height: 100%;
 
-.placeholder-card {
+  .placeholder-card {
     width: 100%;
     max-width: 560px;
     padding: 2.5rem 0;
   }
 
-  .placeholder-title {
-    margin: 0 0 0.5rem;
-    font-size: 2rem;
-  }
+  .placeholder-header {
+    display: flex;
+    gap: 1rem;
 
-  .placeholder-tagline {
-    margin: 0 0 1.5rem;
-    font-weight: $weight-bold;
-    color: $piper;
-  }
+    .placeholder-header-left {
+      max-width: 150px;
+
+      .placeholder-logo {
+        display: block;
+        max-width: 100%;
+        width: 150px;
+      }
+
+    } // .placeholder-header-left
+
+    .placeholder-header-right {
+
+      .placeholder-title {
+        margin: 0 0 0.5rem;
+        font-size: 2rem;
+      }
+
+      .placeholder-tagline {
+        margin: 0 0 1.5rem;
+        font-weight: $weight-bold;
+        color: $piper;
+      }
+
+    } // .placeholder-header-right
+
+  } // .placeholder-header
 
   .placeholder-body {
     margin: 0 0 2rem;
